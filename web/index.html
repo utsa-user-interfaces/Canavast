@@ -1,3 +1,8 @@
+<!--
+Document   : index
+    Created on : Nov 2, 2018, 2:30:45 PM
+    Author     : Geoffrey
+-->
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -21,25 +26,26 @@
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
         <h3 class="w3-wide"><b>Canavast</b></h3>
       </div>
-      <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-        <a href="#" class="w3-bar-item w3-button">Drawings</a>
-        <a href="#" class="w3-bar-item w3-button">Digital Art</a>
-        <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-          Paintings <i class="fa fa-caret-down"></i>
-        </a>
-        <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-          <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Abstract</a>
-          <a href="#" class="w3-bar-item w3-button">Modernism</a>
-          <a href="#" class="w3-bar-item w3-button">Impressionism</a>
-          <a href="#" class="w3-bar-item w3-button">Surrealism</a>
-        </div>
-        <a href="#" class="w3-bar-item w3-button">Photography</a>
-        <a href="#" class="w3-bar-item w3-button">Sculptures</a>
-        <a href="#" class="w3-bar-item w3-button">Fabric</a>
+      <div class="w3-container w3-large w3-text-black" style="font-weight:bold">
+          <form action="Canavast/login/" method="post">
+              <p>Login<p>
+              <label for="username">Username:</label>
+              <input type="text" name="username" required="required" style="width:230px" /><br />
+              <label for="password"> Password:</label>
+              <input type="password" name="password" required="required" style="width:230px" /><br />
+              <input type="submit" value="Submit" class="w3-button w3-red"/>
+          </form>
+      </div>
+      <div class="w3-container w3-large w3-text-grey" style="font-weight:bold">
+          <a href="#" class="w3-bar-item w3-button">Drawings</a>
+          <a href="#" class="w3-bar-item w3-button">Digital Art</a>
+          <a href="#" class="w3-bar-item w3-button">Paintings</a>
+          <a href="#" class="w3-bar-item w3-button">Photography</a>
+          <a href="#" class="w3-bar-item w3-button">Sculptures</a>
+          <a href="#" class="w3-bar-item w3-button">Fabric</a>
       </div>
       <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-      <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
     </nav>
 
     <!-- Top menu on small screens -->
@@ -61,8 +67,8 @@
       <header class="w3-container w3-xlarge">
         <p class="w3-left">All</p>
         <p class="w3-right">
-          <i class="fa fa-shopping-cart w3-margin-right"></i>
-          <i class="fa fa-search"></i>
+            <i class="fa fa-search"></i>
+            <i class="fa fa-shopping-cart w3-margin-right"></i>
         </p>
       </header>
 
@@ -140,20 +146,22 @@
         </div>
       </div>
 
-      <!-- Subscribe section -->
+      <!-- Subscribe section
       <div class="w3-container w3-black w3-padding-32">
         <h1>Subscribe</h1>
         <p>To get special offers and VIP treatment:</p>
         <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
         <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
       </div>
+      -->
 
       <!-- Footer -->
+      <div class="w3-black w3-large w3-center w3-padding-24">Contact</div>
       <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
         <div class="w3-row-padding">
           <div class="w3-col s4">
-            <h4>Contact</h4>
-            <p>Questions? Go ahead.</p>
+            <h4>Questions?</h4>
+            <p>Go ahead.</p>
             <form action="/action_page.php" target="_blank">
               <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
               <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
