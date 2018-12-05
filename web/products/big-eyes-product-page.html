@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+Document   : products/product-page.html
+    Created on : Nov 28, 2018, 1:30:45 PM
+    Author     : Geoffrey
+-->
+<html>
+	<head>
+		<title>Canavast</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../styles/w3.css">
+		<link rel="stylesheet" href="../styles/home.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body class="w3-content" style="max-width:1200px">
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3; width:250px" id="mySidebar">
+      <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <h3 class="w3-wide"><a href="/Canavast"><b>Canavast</b></a></h3>
+      </div>
+      <div class="w3-container w3-padding-small w3-large w3-text-black" style="font-weight:bold">
+          <form action="#" method="post">
+              <p>Login<p>
+              <label for="username">Username:</label>
+              <input type="text" name="username" required="required" style="width:230px" /><br />
+              <label for="password"> Password:</label>
+              <input type="password" name="password" required="required" style="width:230px" /><br />
+              <input type="submit" value="Submit" class="w3-button w3-black"/>
+          </form>
+	  <span class="w3-small w3-medium">New customer? <a href="/Canavast/register/">Start here.</a></span>
+      </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide"><a href="/Canavast"><b>Canavast</b></a></div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+		  <div class="w3-container w3-black w3-xxlarge w3-padding-small">Big Eyes Painting</div>
+		  <h4>Description</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          <p><strong>Product ID: </strong>3</p>
+		  <p><strong>Product Code: </strong>0000000003</p>
+		  <p><strong>Product Price: </strong>$ 15.99</p>
+		  <p><strong>Quantity: </strong>1</p>
+        </div>
+        <div class="w3-third w3-container w3-padding-small">
+			  <img src="../images/paintings/big-eyes.jpg" style="width:100%">
+		    <a href="#" class="w3-button w3-green w3-block w3-margin-top">Buy</a>
+        </div>
+      </div>
+
+     <footer id="myFooter">
+	    <div class="w3-black w3-center w3-padding-16">Powered by FullHouse</div>
+    </footer>
+
+    <!-- End of page content -->
+    </div>
+
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+
+    </body>
+</html>
