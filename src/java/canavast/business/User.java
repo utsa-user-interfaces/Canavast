@@ -8,24 +8,33 @@ import java.io.Serializable;
  */
 public class User implements Serializable {
 
-    private String email;
+    private String username;
+    private String password;
 
     public User() {
-
-        email = "";
+        username= "";
+        password = "";
     }
 
-    public User(String email) {
+    public User(String username, String password) {
 
-        this.email = email;
+        this.username = username;
+        this.password = password;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUserName() {
+        return username;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUserName(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
-
