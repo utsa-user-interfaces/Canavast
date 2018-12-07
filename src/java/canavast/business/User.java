@@ -2,35 +2,30 @@ package canavast.business;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Geoffrey Sessums
- */
 public class User implements Serializable {
 
-    private String username;
+    private String userName;
     private String password;
 
     public User() {
-        username= "";
-        password = "";
+        userName= "";
+        password= "";
     }
 
-    public User(String username, String password) {
-
-        this.username = username;
+    public User(String userName, String password) {
+        this.userName = userName;
         this.password = password;
     }
 
     public String getUserName() {
-        return username;
+        return userName;
     }
 
-    public void setUserName(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getPassword() {
+    public String getPasword() {
         return password;
     }
 

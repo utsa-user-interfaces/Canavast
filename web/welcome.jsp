@@ -1,8 +1,10 @@
-<!--
-Document   : index
-    Created on : Nov 2, 2018, 2:30:45 PM
-    Author     : Geoffrey
--->
+<%-- 
+    Document   : welcome.jsp
+    Created on : Dec 6, 2018, 2:06:31 PM
+    Author     : Geoffrey 
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -24,16 +26,7 @@ Document   : index
         <h3 class="w3-wide"><a href="/Canavast"><b>Canavast</b></a></h3>
       </div>
       <div class="w3-container w3-padding-small w3-large w3-text-black" style="font-weight:bold">
-          <form action="userList" method="post">
-              <p>Login<p>
-              <input type="hidden" name="action" value="add">
-              <label for="username">Username:</label>
-              <input type="text" name="username" required="required" style="width:230px" /><br />
-              <label for="password"> Password:</label>
-              <input type="password" name="password" required="required" style="width:230px" /><br />
-              <input type="submit" value="Submit" class="w3-button w3-black"/>
-          </form>
-	  <span class="w3-small w3-medium">New customer? <a href="/Canavast/register/">Start here.</a></span>
+          <span class="w3-medium">Welcome, ${user.userName}!<br><a href="/Canavast">Sign out</a></span>
       </div>
       <div class="w3-container w3-large w3-text-grey" style="font-weight:bold">
           <a href="#drawings" class="w3-bar-item w3-button">Drawings</a>
@@ -637,3 +630,4 @@ Document   : index
 
 </body>
 </html>
+
