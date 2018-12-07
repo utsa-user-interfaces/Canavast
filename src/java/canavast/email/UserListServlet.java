@@ -27,10 +27,12 @@ public class UserListServlet extends HttpServlet {
         if (action.equals("add")) {                
             // get parameters from the request
             String username = request.getParameter("username");
+            String email = request.getParameter("email");
             String password = request.getParameter("password");
+            String confirmPassword = request.getParameter("confirmPassword");
 
             // use regular Java classes
-            User user = new User(username, password);
+            User user = new User(username, email, password, confirmPassword);
             UserDB.insert(user);
 
             // store the User object in request and set URL

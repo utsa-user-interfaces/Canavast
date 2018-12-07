@@ -17,8 +17,9 @@ and open the template in the editor.
         <div class="box w3-large">
             <h2>Create Account</h2>
 
-            <form action="#">
+            <form action="../userList" method="post">
 		<div class="container">
+              <input type="hidden" name="action" value="add">
 	            <label for="username"><b>Your name</b></label>
 		    <input type="text" placeholder="Enter Username" name="username" required>
 
@@ -28,10 +29,10 @@ and open the template in the editor.
 	            <label for="password"><b>Password</b></label>
 	            <input type="password" placeholder="Enter Password" name="password" required>
 		    
-		    <label for="password"><b>Re-enter password</b></label>
-	            <input type="password" placeholder="Enter Password" name="password" required>
+		    <label for="confirmpassword"><b>Re-enter password</b></label>
+	            <input type="password" placeholder="Enter Password" name="confirmpassword" required>
 				
-                <a href="/Canavast"><button type="submit">Create Account</button></a>
+              <input type="submit" value="Create Account" class="w3-button w3-black w3-block"/>
 		    <label>
 		    <input type="checkbox" checked="checked" name="remember"> Remember me
 		    </label>
